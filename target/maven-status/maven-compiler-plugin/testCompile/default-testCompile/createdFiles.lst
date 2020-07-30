@@ -1,0 +1,7 @@
+config\BrowserConfig.class
+RunCuckestTest.class
+config\Book.class
+Stepdefs\MyStepdefs.class
+config\pageobjects\PageObjects.class
+config\BookStore.class
+config\UtilitiesBaseClass.class

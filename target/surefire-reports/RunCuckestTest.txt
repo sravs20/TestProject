@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------------
+Test set: RunCuckestTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 3.138 sec <<< FAILURE!
+Check login behaviour with valid and invalid credentials(Test AUT login functionality)  Time elapsed: 1.534 sec  <<< ERROR!
+java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Snookala\Installables\chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at config.BrowserConfig.initiateChromeBrowser(BrowserConfig.java:14)
+	at Stepdefs.MyStepdefs.iAmOnAUTLoginPage(MyStepdefs.java:22)
+	at ✽.I am on AUT login page(file:///C:/Automation/Workspace/TestProject/src/test/resources/feature1.feature:5)
+
+Check login behaviour with valid and invalid credentials(Test AUT login functionality)  Time elapsed: 1.535 sec  <<< ERROR!
+java.lang.NullPointerException
+	at config.BrowserConfig.closeDriver(BrowserConfig.java:22)
+	at Stepdefs.MyStepdefs.safeCloseDriver(MyStepdefs.java:83)
+

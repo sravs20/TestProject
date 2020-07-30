@@ -1,0 +1,98 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-30T10:36:54.894Z",
+        "line": 11,
+        "name": "Check login behaviour with valid and invalid credentials",
+        "description": "",
+        "id": "test-aut-login-functionality;check-login-behaviour-with-valid-and-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 92410400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Stepdefs.MyStepdefs.safeCloseDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 19722360700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on AUT login page",
+            "match": {
+              "location": "Stepdefs.MyStepdefs.iAmOnAUTLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 503293500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter \"test@qa-experience.com\" and \"Password1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test@qa-experience.com\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"Password1\"",
+                  "offset": 37
+                }
+              ],
+              "location": "Stepdefs.MyStepdefs.iEnterAnd(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 143336800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I hit Login button",
+            "match": {
+              "location": "Stepdefs.MyStepdefs.iHitLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 127882900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I see successfully login to the application",
+            "match": {
+              "location": "Stepdefs.MyStepdefs.iSeeSuccessfullyLoginToTheApplication()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Test AUT login functionality",
+    "description": "",
+    "id": "test-aut-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature1.feature",
+    "tags": []
+  }
+]
